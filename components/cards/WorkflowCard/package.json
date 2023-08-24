@@ -1,8 +1,8 @@
 {
-  "name": "workflow-card",
+  "name": "components-cards-workflowcard",
   "version": "1.0.0",
   "description": "Card to display Workflow",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vite build && tsc"

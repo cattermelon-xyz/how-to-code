@@ -1,7 +1,11 @@
 {
   "private": true,
   "workspaces": [
-    "components/cards/WorkflowCard",
-    "components/DirectedGraph"
+    "apps/*",
+    "apps/syncvote/syncvote-fe",
+    "components/*",
+    "components/cards/*",
+    "votemachines/*",
+    "votemachines/singlevote/singlevote-fe"
   ]
 }

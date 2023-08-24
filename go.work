@@ -1,0 +1,7 @@
+go 1.21.0
+
+use (
+    ./apps/syncvote/web2
+	./votemachines/singlevote/web2
+	./votemachines/polling/web2
+)
