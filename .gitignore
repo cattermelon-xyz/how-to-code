@@ -1,6 +1,6 @@
 # IDEs
 .idea
-.vscode
+.vscode/local.code-workspace
 
 # Below is a copy of https://github.com/github/gitignore/blob/HEAD/Node.gitignore
 

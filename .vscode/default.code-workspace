@@ -1,0 +1,26 @@
+{
+  "folders": [
+    {
+      "name": "root",
+      "path": "../"
+    },
+    {
+      "name": "WorkflowCard",
+      "path": "../components/cards/WorkflowCard"
+    },
+    {
+      "name": "DirectedGraph",
+      "path": "../components/DirectedGraph"
+    },
+    {
+      "name": "docs",
+      "path": "../docs"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "node_modules/": true
+    }
+  },
+  "recommendations": ["dbaeumer.vscode-eslint", "orta.vscode-jest"]
+}
