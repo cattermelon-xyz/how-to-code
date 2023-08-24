@@ -50,6 +50,8 @@ votemachines/
 
 - Write a typescript library: [link](https://www.tsmean.com/articles/how-to-write-a-typescript-library/)
 
+- Write a component library: [link](https://www.airplane.dev/blog/how-to-build-a-react-component-library)
+
 ### Unresolve questions
 
 - In the near future we would have to implement Storybook for better component development. This [link](https://github.com/storybookjs/storybook/discussions/22521) would be helpful.
