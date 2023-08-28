@@ -1,8 +1,9 @@
 {
-  "name": "syncvote-fe",
+  "name": "utils",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "main": "index.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -10,19 +11,14 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.33.1",
-    "common": "1.0.0",
-    "components-cards-workflowcard": "1.0.0",
-    "components-directedgraph": "1.0.0",
-    "cross-env": "5.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "votemachines-singlevote-singlevotefe": "1.0.0"
+    "cross-env": "5.0.5"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
-    "tailwindcss": "^3.3.3",
     "typescript": "^4.9.3",
     "vite": "^4.1.0"
   }

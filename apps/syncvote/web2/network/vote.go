@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 
-	"syncvote/enforcer"
+	// "syncvote/enforcer"
 	. "syncvote/types"
 	"syncvote/utils"
 )
@@ -76,9 +76,11 @@ func VoteHandler(w http.ResponseWriter, r *http.Request) {
 			fmt.Printf("The mission is done, the result is %s\n; can tweet now", mission.Current.Name)
 			log.Println(votedResult)
 			if mission.Current.VoteMachineType == "MultipleChoice" {
-				enforcer.Tweet("result of " + vote.MissionId + " is: " + fmt.Sprintf("%v", options))
+				fmt.Printf("Tweet1")
+				// enforcer.Tweet("result of " + vote.MissionId + " is: " + fmt.Sprintf("%v", options))
 			} else {
-				enforcer.Tweet("result of " + vote.MissionId + " is: " + mission.Current.Name)
+				fmt.Printf("Tweet2")
+				// enforcer.Tweet("result of " + vote.MissionId + " is: " + mission.Current.Name)
 			}
 		}
 	}

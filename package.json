@@ -6,6 +6,7 @@
     "components/*",
     "components/cards/*",
     "votemachines/*",
-    "votemachines/singlevote/singlevote-fe"
+    "votemachines/singlevote/singlevote-fe",
+    "utils"
   ]
 }
