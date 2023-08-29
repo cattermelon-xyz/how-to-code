@@ -10,7 +10,6 @@ export const registerVoteMachine = (machine: IVoteMachine) => {
 };
 
 export const getVoteMachine = (name: string | undefined) => {
-  console.log('name', name);
   if (!name || !machines[name]) {
     return undefined;
   }

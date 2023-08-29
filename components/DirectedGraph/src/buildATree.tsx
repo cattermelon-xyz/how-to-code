@@ -206,8 +206,6 @@ export const buildATree = ({
       console.log('voteMachine', voteMachine);
       const vm: any = getVoteMachine(voteMachine);
       console.log('vm', vm);
-      console.log('source', source);
-      console.log('target', target);
       return vm.getLabel({ source, target });
     };
 
