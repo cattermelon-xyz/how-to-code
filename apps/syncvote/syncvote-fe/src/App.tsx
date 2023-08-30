@@ -41,7 +41,7 @@ function App() {
       >
         This is sample content inside the WorkflowCard.
       </WorkflowCard> */}
-      {/* <Icon presetIcon={presetIcons} iconUrl={avatarUrl} editable={true} /> */}
+      <Icon presetIcon={presetIcons} iconUrl={avatarUrl} editable={true} />
       {/* <TextEditor /> */}
       {isVoteMachineRegistered && (
         <Layout className='relative items-center w-full h-screen'>

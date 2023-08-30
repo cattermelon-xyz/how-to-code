@@ -9,7 +9,7 @@ import { DelayUnit } from 'components-directedgraph/index';
 import NewOptionDrawer from './NewOptionDrawer';
 import { NavConfigPanel, INavPanelNode } from 'components-directedgraph/index';
 import { PlusOutlined } from '@ant-design/icons';
-// import '../styles.scss';
+import '../styles.scss';
 import { CollapsiblePanel } from 'components-directedgraph/index';
 import { SingleChoice as Interface } from '../interface';
 import { SideNote } from 'components-directedgraph/index';

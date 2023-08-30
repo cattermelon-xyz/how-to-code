@@ -26,7 +26,7 @@ import SelfConnectingEdge from './CustomEdges/SelfConnectingEdge';
 import BezierCustomEdge from './CustomEdges/BezierCustomEdge';
 import SmoothCustomEdge from './CustomEdges/SmoothCustomEdge';
 import { GraphViewMode, IGraph, IWorkflowVersionLayout } from './interface';
-import EditIcon from '@assets/EditIcon';
+// import EditIcon from '@assets/EditIcon';
 import CosmeticConfigPanel from './CosmeticConfigPanel';
 import QuickStartDialog from './QuickStartDialog';
 import { GraphContext } from './context';
