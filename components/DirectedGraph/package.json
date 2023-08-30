@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "antd": "5.2.2",
     "autoprefixer": "10.4.13",
     "common": "1.0.0",
     "html-react-parser": "4.0.0",

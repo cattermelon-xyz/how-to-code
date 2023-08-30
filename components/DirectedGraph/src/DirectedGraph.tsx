@@ -143,7 +143,7 @@ const Flow = () => {
     }).then(downloadImage);
   };
   return (
-    <>
+    <div className='h-screen w-full'>
       {renderVoteMachineConfigPanel({
         viewMode,
         web2Integrations,
@@ -297,7 +297,7 @@ const Flow = () => {
           </>
         ) : null}
       </ReactFlow>
-    </>
+    </div>
   );
 };
 // TODO: expose a function for manually trigger fitview
@@ -313,6 +313,7 @@ export const DirectedGraph = (props: IGraph) => {
     >
       <GraphContext.Provider value={props}>
         <ReactFlowProvider>
+          <p>Show Test Directedgraph</p>
           <Flow />
         </ReactFlowProvider>
       </GraphContext.Provider>
