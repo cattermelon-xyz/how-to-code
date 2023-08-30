@@ -2,7 +2,7 @@ import { Tabs } from 'antd';
 import ContextTab from './ContextTab';
 import RulesTab from './RulesTab';
 import TriggerTab from './TriggerTab';
-// import '../styles.scss';
+import '../styles.scss';
 import { useContext } from 'react';
 import { GraphPanelContext } from '../context';
 import { GraphViewMode } from '../interface';

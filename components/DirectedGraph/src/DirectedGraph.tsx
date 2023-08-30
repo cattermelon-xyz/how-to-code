@@ -26,7 +26,7 @@ import SelfConnectingEdge from './CustomEdges/SelfConnectingEdge';
 import BezierCustomEdge from './CustomEdges/BezierCustomEdge';
 import SmoothCustomEdge from './CustomEdges/SmoothCustomEdge';
 import { GraphViewMode, IGraph, IWorkflowVersionLayout } from './interface';
-import EditIcon from '@assets/EditIcon';
+// import EditIcon from '@assets/EditIcon';
 import CosmeticConfigPanel from './CosmeticConfigPanel';
 import QuickStartDialog from './QuickStartDialog';
 import { GraphContext } from './context';
@@ -143,7 +143,7 @@ const Flow = () => {
     }).then(downloadImage);
   };
   return (
-    <>
+    <div className='h-screen w-full'>
       {renderVoteMachineConfigPanel({
         viewMode,
         web2Integrations,
@@ -297,7 +297,7 @@ const Flow = () => {
           </>
         ) : null}
       </ReactFlow>
-    </>
+    </div>
   );
 };
 // TODO: expose a function for manually trigger fitview
@@ -313,6 +313,7 @@ export const DirectedGraph = (props: IGraph) => {
     >
       <GraphContext.Provider value={props}>
         <ReactFlowProvider>
+          <p>Show Test Directedgraph</p>
           <Flow />
         </ReactFlowProvider>
       </GraphContext.Provider>
