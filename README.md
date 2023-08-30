@@ -11,15 +11,21 @@ This is the folder structure:
 ```md
 .vscode/
 | default.code-workspace
-| k2.code-workspace
-| trung.code-workspace
+| local.code-workspace
 docs/
+supabase/
 components/
-| cards/
-| | Workflowcard/ (ReactJS lib)
 | DirectedGraph/ (ReactJS lib)
-| TextEditor/ (ReactJS lib)
+| RichTextEditor/ (ReactJS lib)
+| Icon/ (ReactJS lib)
+| Banner/ (ReactJS lib)
 utils/ (TypeScript lib)
+| src/
+| | getImageUrl
+| | idString (createIdString, extractIdFromIdString)
+| | subtractArray
+| | supabaseClient
+| | dal (getData, setData)
 | index.ts
 apps/
 | syncvote/
@@ -27,18 +33,18 @@ apps/
 | | service/ (Golang project)
 | admin
 | | webapp/ (ReactJS app)
-| | services/ (Golang project)
-blockchain/
-| dash/ (Rust project)
-| syncvote/ (Rust project)
 votemachines/
 | singlevote/
-| | front-end/ (ReactJS lib)
-| | solana/ (Rust)
+| | weblib/ (ReactJS lib)
 | | web2/ (Golang lib)
 | polling/
-| | front-end/ (ReactJS lib)
-| | solana/ (Rust)
+| | weblib/ (ReactJS lib)
+| | web2/ (Golang lib)
+| veto/
+| | weblib/ (ReactJS lib)
+| | web2/ (Golang lib)
+| upvote/
+| | weblib/ (ReactJS lib)
 | | web2/ (Golang lib)
 ```
 

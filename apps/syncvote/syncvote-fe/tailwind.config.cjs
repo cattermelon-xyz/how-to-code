@@ -1,6 +1,19 @@
 /** @type {import('tailwindcss').Config} */
+const path = require('path');
+
 module.exports = {
-  content: ['./src/**/*.{html,js}'],
+  content: [
+    './src/**/*.{js,jsx,ts,tsx,html}',
+    './index.html',
+    '../../../components/DirectedGraph/src/**/*.{js,jsx,ts,tsx,html}',
+  ],
+  // content: [
+  //   './src/**/*.{html,js}',
+  //   path.join(
+  //     path.dirname(require.resolve('@my-company/tailwind-components')),
+  //     '**/*.js'
+  //   ),
+  // ],
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {
@@ -1203,5 +1216,4 @@ module.exports = {
   corePlugins: {
     preflight: false,
   },
-  content: ['./src/**/*.{js,jsx,ts,tsx,html}', './index.html'],
 };
