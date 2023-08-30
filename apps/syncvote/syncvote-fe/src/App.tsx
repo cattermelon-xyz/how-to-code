@@ -13,6 +13,8 @@ import { SingleChoice } from 'votemachines-singlevote-singlevotefe';
 import { fakeVersion } from './mockData/fakeVersion';
 import { Layout } from 'antd';
 import PresetIcons from './mockData/presetIcons';
+import { useGetDataHook } from 'utils/index';
+import { ConfigTypes, config } from './config/config';
 
 function App() {
   const [avatarUrl, setAvatarUrl] = useState('preset:glasses_happy.svg');
@@ -25,9 +27,24 @@ function App() {
   const [centerPos, setCenterPos] = useState({ x: 0, y: 0 });
   const [isVoteMachineRegistered, setIsVoteMachineRegistered] = useState(false);
 
+  const { data: orgs, error } = useGetDataHook<ConfigTypes['orgInfo']>({
+    params: {
+      userId: '8ce1c0ae-77f8-4f58-9cfd-8d863971e4c6',
+    },
+    configInfo: config.orgInfo,
+    cacheOption: false,
+  });
+
+  if (!error) {
+    console.log(orgs);
+  } else {
+    console.log(error);
+  }
+
   useEffect(() => {
     registerVoteMachine(SingleChoice);
     setIsVoteMachineRegistered(true);
+    console.log(orgs);
   }, []);
 
   return (
