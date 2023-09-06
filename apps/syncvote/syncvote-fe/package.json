@@ -9,9 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.33.1",
     "antd": "5.2.2",
-    "common": "1.0.0",
     "components-cards-workflowcard": "1.0.0",
     "components-directedgraph": "1.0.0",
     "cross-env": "5.0.5",

@@ -313,7 +313,6 @@ export const DirectedGraph = (props: IGraph) => {
     >
       <GraphContext.Provider value={props}>
         <ReactFlowProvider>
-          <p>Show Test Directedgraph</p>
           <Flow />
         </ReactFlowProvider>
       </GraphContext.Provider>
